@@ -15,10 +15,11 @@
 @end
 
 @implementation BBTextView
+@synthesize placeColor = _placeColor;
 
 -(void)layoutSubviews
 {
-    self.delegate = self;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeEditing) name:UITextViewTextDidChangeNotification object:nil];
 }
 
 /**
@@ -30,6 +31,24 @@
     _placeholder = placeholder;
     [self setNeedsDisplay];
 }
+
+/**
+ *  设置提醒文字颜色
+ *
+ *  @return 返回颜色值
+ */
+- (UIColor *)placeColor
+{
+    if (!_placeColor)
+        _placeColor = [UIColor grayColor];
+    return _placeColor;
+}
+- (void)setPlaceColor:(UIColor *)placeColor
+{
+    _placeColor = placeColor;
+    [self setNeedsDisplay];
+}
+
 
 /**
  *  画出文字提醒
@@ -47,17 +66,17 @@
         {
             font = [UIFont systemFontOfSize:12];
         }
-        NSDictionary * dict = @{NSFontAttributeName:font,NSForegroundColorAttributeName:[UIColor grayColor]};
+        NSDictionary * dict = @{NSFontAttributeName:font,NSForegroundColorAttributeName:self.placeColor};
         [self.placeholder drawAtPoint:CGPointMake(5, 8) withAttributes:dict];
     }
 }
 
 /**
- *  uitextview delegate
+ *  uitextview changetext
  */
--(void)textViewDidChange:(UITextView *)textView
+-(void)changeEditing
 {
-    if ([textView.text isEqualToString:@""]) {
+    if ([self.text isEqualToString:@""]) {
         _isHidden = NO;
         [self setNeedsDisplay];
     }
@@ -67,4 +86,5 @@
         [self setNeedsDisplay];
     }
 }
+
 @end

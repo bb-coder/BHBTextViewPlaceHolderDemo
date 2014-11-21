@@ -13,6 +13,10 @@
 /**
  *  设置一个文字提示
  */
-@property (nonatomic,copy) NSString * placeholder;
+@property (nonatomic,copy) NSString     * placeholder;
+/**
+ *  设置提醒文字颜色
+ */
+@property (nonatomic,strong) UIColor    * placeColor;
 
 @end

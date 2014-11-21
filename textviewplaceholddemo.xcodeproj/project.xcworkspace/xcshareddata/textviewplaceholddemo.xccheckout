@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>37C7089C-C66D-449B-8BD6-2CE2D088ACE4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>textviewplaceholddemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1FE0A60B1017B59E9CCF8B9CD740C54A1F0AE653</key>
+		<string>https://github.com/bb-coder/textviewplaceholderdemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>textviewplaceholddemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1FE0A60B1017B59E9CCF8B9CD740C54A1F0AE653</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bb-coder/textviewplaceholderdemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1FE0A60B1017B59E9CCF8B9CD740C54A1F0AE653</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1FE0A60B1017B59E9CCF8B9CD740C54A1F0AE653</string>
+			<key>IDESourceControlWCCName</key>
+			<string>textviewplaceholderdemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
