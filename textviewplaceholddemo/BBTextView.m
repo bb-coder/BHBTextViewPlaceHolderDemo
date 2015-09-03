@@ -17,9 +17,17 @@
 @implementation BBTextView
 @synthesize placeColor = _placeColor;
 
--(void)layoutSubviews
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeEditing) name:UITextViewTextDidChangeNotification object:nil];
+    self = [super initWithFrame:frame];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeEditing) name:UITextViewTextDidChangeNotification object:nil];
+    }
+    return self;
+}
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 /**

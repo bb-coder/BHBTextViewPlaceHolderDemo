@@ -22,9 +22,9 @@
      textview
      */
     BBTextView * textView = [[BBTextView alloc]initWithFrame:CGRectMake(10, 100, 300, 300)];
-    textView.backgroundColor = [UIColor greenColor];
+    textView.backgroundColor = [UIColor orangeColor];
     textView.font = [UIFont systemFontOfSize:25];
-    textView.placeColor = [UIColor redColor];
+    textView.placeColor = [UIColor lightGrayColor];
     textView.placeholder = @"This is placeholder!";
     [self.view addSubview:textView];
     
