@@ -40,6 +40,11 @@
     [self setNeedsDisplay];
 }
 
+- (void)setText:(NSString *)text{
+    [super setText:text];
+    [self changeEditing];
+}
+
 /**
  *  设置提醒文字颜色
  *
